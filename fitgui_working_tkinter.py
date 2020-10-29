@@ -9,9 +9,11 @@ Diffusion curve-fitting tool, version 1.0.0
 import tkinter as tk
 import tkinter.font as tkfont
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("TkAgg")
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import matplotlib.pyplot as plt
 import nmrglue as ng
 from scipy.optimize import curve_fit
 from tkinter import filedialog as fd
