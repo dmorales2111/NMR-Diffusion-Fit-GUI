@@ -88,7 +88,7 @@ class DataWindow(tk.Frame):
         self.relief = relief
         self.box = box
 
-        self.f = Figure(figsize=(5,4),dpi=150)
+        self.f = Figure(figsize=(4,4),dpi=150)
         self.ax = self.f.add_subplot(111)
         self.canvas = FigureCanvasTkAgg(self.f, self)
         self.canvas.draw()
